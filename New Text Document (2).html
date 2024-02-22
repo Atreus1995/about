@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40vh;
+        }
+
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: marquee 8s linear infinite;
+            border: 2px solid #3498db;
+            padding: 20px;
+            border-radius: 100px;
+            background-color: #ecf0f1;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee-container">
+        <h1>Hello, llllllguys!</h1>
+    </div>
+</body>
+</html>
